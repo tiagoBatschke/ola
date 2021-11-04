@@ -9,44 +9,159 @@
     <link rel="stylesheet" href="./assets/reset.css">
     <link rel="stylesheet" href="./css/sobreNos.css">
     <link rel="stylesheet" href="./css/parceiros.css">
+    <link rel="stylesheet" href="./css/encomende.css">
+    <link rel="stylesheet" href="/docs/css/menu.css">
+    <link rel="stylesheet" href="./css/contato.css">
+    <link rel="stylesheet" href="./css/produtos.css">
 </head>
 <body>
+   
     <header class="header__container">
         <div class="container__logo">
             <img class="logo" src="./assets/header/253F3A46-C38C-45A5-9A46-5E7AABEFE466 (1).svg" alt="">
         </div>
-        <nav class="navegacao">
+        
+        <nav  id="navegacao" class="navegacao ">
+        
             <ul class="navegacao__lista">
-                <li class="navegacao__card">
-                    <a  href="">
+                
+                <li  id="encomende" class="navegacao__card">
+                    <p  href="">
                         <img src="./assets/header/open_parcel_96px.png" alt="">
                          <p class="navegacao__lista-item">Encomende</p>
-                    </a>
+                    </p>
+    
+                   
                 </li>
-                <li class="navegacao__card">
-                    <a  href="">
+                <li id="produtos" class="navegacao__card">
+                    <p  href="">
                         <img src="./assets/header/birthday_96px.png" alt="">
                          <p class="navegacao__lista-item">Produtos</p>
-                    </a>
+                    </p>
                 </li>
-                <li class="navegacao__card">
-                    <a  href="">
+                <li  id="contato" class="navegacao__card">
+                    <p href="">
                         <img src="./assets/header/activity_feed_96px.png" alt="">
                          <p class="navegacao__lista-item">Contato</p>
-                    </a>
+                    </p>
                 </li>
                 <li class="navegacao__card">
-                    <a  href="">
+                    <p  href="">
                         <img src="./assets/header/handshake_96px.png" alt="">
                          <p class="navegacao__lista-item">Seja um Parceiro</p>
-                    </a>
+                    </p>
                 </li>
             </ul>
         </nav>
     </header>
-     
+    <main class="menu">
+
+        <div id="popUp_encomende" class="conteiner__encomende fechar__popUp ">
+            <div class="titulo__encomende">
+                <h2 class="titulo-popup">Faça sua encomenda</h2>
+            <div  id="botao__fechar-encomende"  class="botão__fechar-popUp" >x</div>
+          </div>
+          
+          <form class="form__encomende" action="">
+              
+                <div class="item-form__encomende">
+                    <label for="">nome</label>
+                    <input maxlength="30"type="text">
+                </div>
+
+                <div class="item-form__encomende" >
+                    <label for="">telefone</label>
+                    <input type="tel">
+                </div>
+
+                <div class="item-form__encomende">
+                    <label for="">emai</label>
+                    <input type="email">
+                </div>
+
+                <div class="item-form__encomende">
+                    <label for="">endereço</label>
+                    <input type="text">
+                </div>
+
+                <div class="item-form__encomende">
+                    <label for="">data</label>
+                    <input type="date">
+                </div>
+                <div class="item-form__encomende">
+                    <label for="">descreva o bolo</label>
+                    <textarea class="detalhes" rows={20}></textarea>
+                </div>
+
+
+          </form> 
+          </div>
+
+        <div id="popUp_produtos" class="conteiner__produtos fechar__popUp ">
+            <div class="titulo__produtos">
+                <h2 class="titulo-popup">Produtos</h2>
+               <div  id="botao__fechar-produtos"  class="botão__fechar-popUp-produtos" >x</div>
+           </div>
+        </div>
+          
+
+        <div id="popUp_contato" class="conteiner__contato fechar__popUp ">
+            <div class="titulo__contato">
+                <h2 class="titulo-popup">contato</h2>
+            <div  id="botao__fechar-contato"  class="botão__fechar-popUp-contato" >x</div>
+          </div>
+          
+          <form  class="form__contato" action="">
+              
+                <div  class="item-form__contato">
+                    <label for="">nome</label>
+                    <input maxlength="30"type="text">
+                </div>
+
+                <div class="item-form__contato">
+                    <label for="">telefone</label>
+                    <input type="tel">
+                </div>
+
+                <div class="item-form__contato">
+                    <label for="">emai</label>
+                    <input type="email">
+                </div>
+
+               
+
+               
+                <div class="item-form__contato">
+                    <label for="">qual motivo do contato?</label>
+                    <textarea class="detalhes" rows={15}></textarea>
+                </div>
+
+
+          </form> 
+          </div>
+          
+
+         
+   
+        
+    </main>
     <footer>
 
     </footer>
+
+    <script src="./js/controllers/PopUpController.js"></script>
+    <script>
+        var popUp = new  PopUpController()
+       popUp.fecharPopUp('#botao__fechar-encomende', '#popUp_encomende')
+       popUp.abrirPopUp('#encomende', '#popUp_encomende')
+
+       popUp.fecharPopUp('#botao__fechar-produtos', '#popUp_produtos')
+       popUp.abrirPopUp('#produtos', '#popUp_produtos')
+       popUp.fecharPopUp('#botao__fechar-contato', '#popUp_contato')
+       popUp.abrirPopUp('#contato', '#popUp_contato')
+     
+     
+    </script>
+    
 </body>
 </html>
