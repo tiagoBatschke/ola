@@ -1,0 +1,27 @@
+
+
+.conteiner__produtos{
+    background-color: white;
+    z-index: 10;
+    width: 60%;
+    margin-left: 20%;
+    height: 90vh;
+    margin-bottom: 4rem;
+    border-radius: 3rem;
+}
+
+.titulo__produtos{
+    margin-top: 0.5rem;
+    margin-left:45%;
+    display: flex;
+    font-size: 2rem;
+   
+}
+
+.botão__fechar-popUp-produtos{
+    
+    margin-left: 60%;
+    font-weight: bold;
+    cursor: pointer;
+}
+

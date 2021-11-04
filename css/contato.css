@@ -1,0 +1,43 @@
+
+
+.conteiner__contato{
+    background-color: white;
+    z-index: 10;
+    width: 60%;
+    margin-left: 20%;
+    height: 90vh;
+    margin-bottom: 4rem;
+    border-radius: 3rem;
+}
+
+.titulo__contato{
+    margin-top: 0.5rem;
+    margin-left:43%;
+    display: flex;
+    font-size: 2rem;
+   
+}
+
+
+.botão__fechar-popUp-contato{
+    
+    margin-left: 70%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form__contato{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 4rem;
+}
+
+.item-form__contato{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.detalhes{
+    height: 10vh;
+}

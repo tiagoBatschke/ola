@@ -26,6 +26,7 @@ a{text-decoration: none;}
     display: flex;
     width: 85%;
     margin-left: 7.5%;
+    margin-bottom: 2rem;
 }
 
 .logo{
@@ -65,8 +66,14 @@ a{text-decoration: none;}
     transition: 0.3s;
     margin-top: 7%;
     margin-bottom: 1%;
+    cursor:pointer;
+}
+
+.navegacao__popUp {
+    display: none;
 }
 }
+
 @media  (max-width:800px) {
     
 .header__container{
