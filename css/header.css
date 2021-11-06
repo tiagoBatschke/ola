@@ -1,4 +1,7 @@
-body{ background: linear-gradient(to left, #c0392b, #8e44ad);}
+body{
+background: -webkit-linear-gradient(to left, #8e44ad, #c0392b);  /* Chrome 10-25, Safari 5.1-6 */
+
+}
 
 a{text-decoration: none;}
 
